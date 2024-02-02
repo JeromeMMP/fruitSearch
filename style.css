@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  font-family: sans-serif, ;
+
+ 
+}
+:root{
+  font-size: 10px;
+}
+
+:focus {
+ /* TODO */
+}
+
+body {
+  background-image: linear-gradient(to right, rgb(255, 187, 0), orangered);
+  /* TODO */
+}
+
+.bold{
+  
+  font-weight: bold;
+  
+}
+
+input {
+  font-size: 2rem;
+  background-color: rgba(255, 255, 255, 0.39);
+  border:solid;
+  border-color: #ff4500;
+  border-radius: 1px;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 1.5px; 
+ /* TODO */
+}
+input:focus-visible{
+  outline: solid;
+  outline-color: orangered;
+
+ 
+} 
+input::placeholder{
+  padding-left: 5px;
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1.3px ;
+  font-weight: 700;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: 0 AUTO;
+  margin-top: 175px
+
+}
+
+
+.search-container .suggestions {
+  width:100%;
+ 
+   /* TODO */
+}
+
+.suggestions ul {
+  padding-left: 0px;
+  list-style: none;
+  margin-block-start: 0px;
+
+}
+
+
+
+ul li {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: .8px;
+  padding-top: 1px;
+  padding-left: 5px;
+  width: inherit;
+  font-size: 1rem;
+  background-color:  rgba(255, 255, 255, 0.39); 
+  list-style-position: outside;
+  
+  /* TODO */
+}
+ul li:hover {
+  background-color:rgba(255, 68, 0, 0.84);
+  cursor: pointer; 
+  /* TODO */
+}
+
+.backGround{
+  background-color:rgba(255, 68, 0, 0.84);
+}
