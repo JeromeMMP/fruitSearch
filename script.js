@@ -14,8 +14,8 @@ function search(str) {
 		if (v.toLowerCase().indexOf(input.value.toLowerCase())!==0){
 			return v.replace(string,`<span class="bold">${string}</span>`)}
 		else {
-			
 			return v.toLowerCase().replace(string,`<span class="bold">${string.charAt(0).toUpperCase()+string.slice(1)}</span>` ) };
+			// return v.replace(new RegExp(string, 'i'), `<span class='bold'>$&</span>`)
 	})
 	return resultBolded
 	
@@ -48,17 +48,18 @@ function searchHandler() {
 	// TODO
 }
 
+//I used the hover in css
 function showSuggestions(evt) {
-	let suggestions = document.querySelectorAll('.fruitSuggestion');
+	// let suggestions = document.querySelectorAll('.fruitSuggestion');
 
-	suggestions.forEach((v)=>v.classList.remove('backGround')); 
+	// suggestions.forEach((v)=>v.classList.remove('backGround')); 
 
-	if(evt.target.tagName == 'LI'){
-		evt.target.classList.add('backGround')
-	}
-	else{
-		suggestions.forEach((v)=>v.classList.remove('backGround')); 
-	}
+	// if(evt.target.tagName == 'LI'){
+	// 	evt.target.classList.add('backGround')
+	// }
+	// else{
+	// 	suggestions.forEach((v)=>v.classList.remove('backGround')); 
+	// }
 	
 	
 
@@ -83,5 +84,5 @@ function resetUl(){
 
 input.addEventListener('keyup', searchHandler);
 suggestions.addEventListener('click', useSuggestion);
-body.addEventListener('mouseover', showSuggestions)
+// body.addEventListener('mouseover', showSuggestions)
 
